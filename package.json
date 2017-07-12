@@ -1,0 +1,20 @@
+{
+  "name": "lws-basic-auth",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "basic-auth",
+  "repository": "https://github.com/lwsjs/basic-auth.git",
+  "keywords": [
+    "lws"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "scripts": {
+    "test": "test-runner test/*.js"
+  },
+  "dependencies": {
+    "basic-auth": "^1.1.0"
+  }
+}
