@@ -1,6 +1,6 @@
 module.exports = MiddlewareBase => class BasicAuth extends MiddlewareBase {
   description () {
-    return 'Control access using basic username and password authentication.'
+    return 'Password-protect a server using Basic Authentication.'
   }
   optionDefinitions () {
     return [

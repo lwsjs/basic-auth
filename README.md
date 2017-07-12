@@ -7,7 +7,7 @@
 
 # lws-basic-auth
 
-Basic Authentication middleware for lws. Enables you to password-protect the server. 
+Password-protect a server using Basic Authentication.
 
 * * *
 
