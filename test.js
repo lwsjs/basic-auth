@@ -73,3 +73,9 @@ tom.test('username and password: authorised', async function () {
   const body = await response.text()
   a.strictEqual(body, 'one')
 })
+
+tom.test('description and optionDefinitions', function () {
+  const plugin = new BasicAuth()
+  plugin.description()
+  plugin.optionDefinitions()
+})
