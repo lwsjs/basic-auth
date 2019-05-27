@@ -1,7 +1,10 @@
-module.exports = MiddlewareBase => class BasicAuth extends MiddlewareBase {
+const EventEmitter = require('events')
+
+class BasicAuth extends EventEmitter {
   description () {
     return 'Password-protect a server using Basic Authentication.'
   }
+
   optionDefinitions () {
     return [
       {
@@ -16,6 +19,7 @@ module.exports = MiddlewareBase => class BasicAuth extends MiddlewareBase {
       }
     ]
   }
+
   middleware (options) {
     if (options.authUser && options.authPass) {
       this.emit('verbose', 'basic-auth.config', { authUser: options.authUser, authPass: '**********' })
@@ -37,3 +41,5 @@ module.exports = MiddlewareBase => class BasicAuth extends MiddlewareBase {
     }
   }
 }
+
+module.exports = BasicAuth

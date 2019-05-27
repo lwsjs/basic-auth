@@ -5,16 +5,23 @@
   "description": "Password-protect a server using Basic Authentication",
   "repository": "https://github.com/lwsjs/basic-auth.git",
   "keywords": [
-    "lws"
+    "lws",
+    "local-web-server",
+    "web"
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=7.6"
+    "node": ">=8"
   },
   "scripts": {
-    "test": "test-runner test/*.js"
+    "test": "test-runner test.js"
   },
   "dependencies": {
-    "basic-auth": "^1.1.0"
+    "basic-auth": "^2.0.1"
+  },
+  "devDependencies": {
+    "lws": "^2.0.0-4",
+    "node-fetch": "^2.6.0",
+    "test-runner": "^0.6.0"
   }
 }
