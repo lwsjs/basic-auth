@@ -26,5 +26,8 @@
     "node-fetch": "^2.6.0",
     "nyc": "^14.1.1",
     "test-runner": "^0.6.0"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
