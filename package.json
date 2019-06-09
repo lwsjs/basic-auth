@@ -6,6 +6,7 @@
   "repository": "https://github.com/lwsjs/basic-auth.git",
   "keywords": [
     "lws",
+    "lws-middleware",
     "local-web-server",
     "web"
   ],
@@ -21,8 +22,8 @@
     "basic-auth": "^2.0.1"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3",
-    "lws": "^2.0.0-7",
+    "coveralls": "^3.0.4",
+    "lws": "^2.0.0",
     "node-fetch": "^2.6.0",
     "nyc": "^14.1.1",
     "test-runner": "^0.6.0"

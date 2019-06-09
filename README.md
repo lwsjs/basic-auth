@@ -7,7 +7,14 @@
 
 # lws-basic-auth
 
-Password-protect a server using Basic Authentication.
+A lws middleware plugin to password-protect a server using Basic Authentication.
+
+Adds the following options to lws.
+
+```
+--auth.user string             Basic authentication username
+--auth.pass string             Basic authentication password
+```
 
 * * *
 
