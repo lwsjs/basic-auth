@@ -1,7 +1,7 @@
 {
   "name": "lws-basic-auth",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Password-protect a server using Basic Authentication",
   "repository": "https://github.com/lwsjs/basic-auth.git",
   "keywords": [
