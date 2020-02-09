@@ -1,10 +1,10 @@
 const Tom = require('test-runner').Tom
-const a = require('assert')
+const a = require('assert').strict
 const fetch = require('node-fetch')
 const Lws = require('lws')
 const BasicAuth = require('./')
 
-const tom = module.exports = new Tom('basic-auth')
+const tom = module.exports = new Tom()
 
 tom.test('no config', async function () {
   const port = 9000 + this.index
@@ -22,9 +22,9 @@ tom.test('no config', async function () {
   })
   const response = await fetch(`http://localhost:${port}/`)
   lws.server.close()
-  a.strictEqual(response.status, 200)
+  a.equal(response.status, 200)
   const body = await response.text()
-  a.strictEqual(body, 'one')
+  a.equal(body, 'one')
 })
 
 tom.test('username and password: unauthorised', async function () {
@@ -45,7 +45,7 @@ tom.test('username and password: unauthorised', async function () {
   })
   const response = await fetch(`http://localhost:${port}/`)
   lws.server.close()
-  a.strictEqual(response.status, 401)
+  a.equal(response.status, 401)
 })
 
 tom.test('username and password: authorised', async function () {
@@ -66,9 +66,9 @@ tom.test('username and password: authorised', async function () {
   })
   const response = await fetch(`http://user:password@localhost:${port}/`)
   lws.server.close()
-  a.strictEqual(response.status, 200)
+  a.equal(response.status, 200)
   const body = await response.text()
-  a.strictEqual(body, 'one')
+  a.equal(body, 'one')
 })
 
 tom.test('description and optionDefinitions', function () {
